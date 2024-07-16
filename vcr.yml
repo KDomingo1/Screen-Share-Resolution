@@ -1,0 +1,16 @@
+project:
+  name: Screen-Share-Resolution
+instance:
+  name: dev
+  runtime: nodejs16
+  region: aws.euw1
+  application-id: dd11208b-6b0a-44fe-8387-3078f061ef46
+  entrypoint: [node, server.js]
+  environment:
+    - name: VIDEO_API_KEY
+      value: "2f84acc4"
+    - name: VIDEO_API_SECRET
+      value: "SWpUuN70ra2yKou8"
+debug:
+  name: debug
+  entrypoint: [sh, debug.sh]
